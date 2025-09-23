@@ -1,102 +1,18 @@
-[
-  {
-    "ayurveda": "Amlapitta",
-    "biomedicine": "Acid Reflux (GERD)",
-    "explanation": "Burning chest pain caused by stomach acid flowing back into the food pipe."
-  },
-  {
-    "ayurveda": "Prameha",
-    "biomedicine": "Diabetes Mellitus",
-    "explanation": "A condition where the body cannot regulate sugar properly, leading to high blood sugar."
-  },
-  {
-    "ayurveda": "Jwara",
-    "biomedicine": "Fever",
-    "explanation": "An increase in body temperature usually due to infection or inflammation."
-  },
-  {
-    "ayurveda": "Kasa",
-    "biomedicine": "Cough",
-    "explanation": "Repeated forceful expulsion of air from the lungs, often due to infection or irritation."
-  },
-  {
-    "ayurveda": "Shwasa",
-    "biomedicine": "Asthma",
-    "explanation": "Difficulty in breathing due to narrowing of airways, causing wheezing and breathlessness."
-  },
-  {
-    "ayurveda": "Arsha",
-    "biomedicine": "Hemorrhoids (Piles)",
-    "explanation": "Swollen veins in the lower rectum or anus that cause pain and bleeding."
-  },
-  {
-    "ayurveda": "Atisara",
-    "biomedicine": "Diarrhea",
-    "explanation": "Frequent loose or watery bowel movements, often due to infection or indigestion."
-  },
-  {
-    "ayurveda": "Yakrit Roga",
-    "biomedicine": "Liver Disorder (Hepatitis)",
-    "explanation": "Inflammation or disease of the liver, often caused by infection or alcohol."
-  },
-  {
-    "ayurveda": "Kustha",
-    "biomedicine": "Skin Diseases (Psoriasis/Leprosy)",
-    "explanation": "Chronic skin problems leading to scaling, rashes, or loss of sensation."
-  },
-  {
-    "ayurveda": "Mutrakricchra",
-    "biomedicine": "Urinary Tract Infection (UTI)",
-    "explanation": "Painful urination due to bacterial infection in the urinary tract."
-  },
-  {
-    "ayurveda": "Hridaya Roga",
-    "biomedicine": "Heart Disease",
-    "explanation": "Conditions affecting the heart such as blockages, chest pain, or high blood pressure."
-  },
-  {
-    "ayurveda": "Anidra",
-    "biomedicine": "Insomnia",
-    "explanation": "Difficulty in falling or staying asleep, leading to restlessness and fatigue."
-  },
-  {
-    "ayurveda": "Chardi",
-    "biomedicine": "Vomiting",
-    "explanation": "Forceful expulsion of stomach contents, usually due to illness or indigestion."
-  },
-  {
-    "ayurveda": "Sandhivata",
-    "biomedicine": "Arthritis (Joint Pain)",
-    "explanation": "Inflammation of joints leading to pain, swelling, and stiffness."
-  },
-  {
-    "ayurveda": "Timira",
-    "biomedicine": "Cataract / Vision Impairment",
-    "explanation": "Clouding of the lens or other eye problems leading to poor vision."
-  },
-  {
-    "ayurveda": "Shiro Roga",
-    "biomedicine": "Migraine / Headache",
-    "explanation": "Severe head pain often accompanied by nausea and sensitivity to light."
-  },
-  {
-    "ayurveda": "Krimi",
-    "biomedicine": "Parasitic Worm Infection",
-    "explanation": "Intestinal worms that cause stomach pain, weakness, and nutritional deficiency."
-  },
-  {
-    "ayurveda": "Shotha",
-    "biomedicine": "Edema / Swelling",
-    "explanation": "Abnormal accumulation of fluid causing puffiness in body parts."
-  },
-  {
-    "ayurveda": "Shoola",
-    "biomedicine": "Abdominal Pain",
-    "explanation": "Cramping or discomfort in the stomach area due to various causes."
-  },
-  {
-    "ayurveda": "Rajayakshma",
-    "biomedicine": "Tuberculosis (TB)",
-    "explanation": "Infectious disease that mainly affects the lungs, causing cough, fever, and weight loss."
+{
+  "Student": {
+    "username": "2025STU001",
+    "password": "student123",
+    "name": "Riya Sharma",
+    "library": {
+      "due_books": [
+        {"title": "Data Science 101", "due_date": "2025-09-30"},
+        {"title": "AI Fundamentals", "due_date": "2025-10-05"}
+      ]
+    },
+    "exams": [
+      {"subject": "Mathematics", "date": "2025-11-15"},
+      {"subject": "Machine Learning", "date": "2025-11-20"}
+    ],
+    "wifi": "Active till Dec 2025"
   }
-]
+}

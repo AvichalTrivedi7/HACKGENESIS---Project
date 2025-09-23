@@ -19,21 +19,20 @@ llm = Llama(
 
 def search_dataset(user_input):
     """
-    Use LLM to infer the closest match from the dataset.
+    Use LLM to act like a Campus Assistant with access to mock student data.
     """
-    dataset_text = "\n".join(
-        [f"- Ayurveda: {d['ayurveda']} | Biomedicine: {d['biomedicine']} | Explanation: {d['explanation']}"
-         for d in dataset]
-    )
-    
+    dataset_text = json.dumps(dataset, indent=2)
+
     prompt = f"""
-You are a medical assistant that maps Ayurveda terms to Allopathy/modern terms.
-Dataset: {dataset_text}
+You are a helpful Campus AI Assistant inside the Unified Campus Identity System.
+Use the mock student dataset below to answer queries realistically.
+
+Dataset:
+{dataset_text}
 
 User query: {user_input}
 
-Answer in JSON format:
-{{"Ayurveda": "...", "Biomedicine": "...", "Explanation": "..."}}
+Respond in Structured format about answer, details and source.
 """
     
     response = llm(prompt, max_tokens=256, stop=["</s>"])
@@ -43,7 +42,7 @@ Answer in JSON format:
 def get_result():
     query = entry.get()
     if not query.strip():
-        output_box.insert(tk.END, "\n⚠️ Please enter a symptom/disease.\n")
+        output_box.insert(tk.END, "\n Please enter query.\n")
         return
     output_box.insert(tk.END, f"\n🔍 Query: {query}\n")
     result = search_dataset(query)
@@ -52,11 +51,11 @@ def get_result():
 
 # Window setup
 root = tk.Tk()
-root.title("🩺 Ayurveda–Allopathy Lookup Assistant")
+root.title("Unified Campus Lookup Assistant")
 root.geometry("700x500")
 
 # Label
-label = tk.Label(root, text="Enter Symptom/Disease:", font=("Arial", 12))
+label = tk.Label(root, text="Enter Query:", font=("Arial", 12))
 label.pack(pady=5)
 
 # Input field
